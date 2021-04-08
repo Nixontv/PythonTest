@@ -13,7 +13,7 @@ generate_random_str = lambda s: s + str(random.getrandbits(128))
 @app.route('/')
 def hallo():
     """Return a friendly HTTP greeting."""
-    return 'Hallo from Belarus - 14.02.2021 - 09:58 pm'
+    return 'Hallo from Belarus - 14.02.2025 - 09:58 pm'
 
 enpoints_data = [
     # [path, [methods], handler, idle]
