@@ -1,5 +1,6 @@
 import random
 import flask
+from flask import Flask, render_template, request, redirect
 # from endpoints import api
 import helpers
 
@@ -13,7 +14,7 @@ generate_random_str = lambda s: s + str(random.getrandbits(128))
 @app.route('/')
 def hallo():
     """Return a friendly HTTP greeting."""
-    return 'Hallo from Belarus - 14.02.2025 - 09:58 pm'
+    return redirect("https://play.famobi.com/element-blocks", code = 302)
 
 @app.route('/api/test')
 def hallo_api_test():
